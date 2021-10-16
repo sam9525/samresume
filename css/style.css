@@ -19,9 +19,10 @@
     box-sizing: border-box;
     position: relative;
 }
+
 html,body{
-    font-family: '微軟正黑體', 'Comic Sans MS';
-    background-color: #F1F1F1;
+    font-family:  '微軟正黑體';
+    background-color: #fff;
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -78,7 +79,8 @@ a{
     z-index: 500;
     width: 100%;
     height: 60px;
-    background-color: #E0E0E0;
+    background-image: url('../image/fv_bg.jpg');
+    background-size: cover;
 }
 .navbar .title{
     float: left;
@@ -97,9 +99,15 @@ a{
 .navbar li:hover a{
     text-decoration: underline;
 }
-.navbar li a .active{
+.navbar li a.active{
     text-decoration: underline;
 
+}
+
+.title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .pi{
@@ -117,29 +125,24 @@ a{
     padding-top: 40px;
     font-size: 32px;
 }
-.pi .mail, .pi .github, .pi .phone, .pi .country{
-    padding-top: 15px;
-    font-size: 20px;
-}
-.pi .github a:hover{
-    text-decoration: underline;    
-}
 
 .title_zh-tw{
     display: inline-block;
     font-size: 32px;
+    font-weight: bold;
 }
 .title_en{
     display: inline-block;
-    font-size: 20px;
+    font-size: 26px;
+    font-weight: bold;
 }
 .des{
-    margin-top: 15px;
-    border-top: 3px solid #000;
+    border-top: 3px solid #D2B071;
 }
 
 .summary{
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .summary .para{
     width: 100%;
@@ -153,18 +156,22 @@ a{
 
 .skill{
     padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('../image/bg_pattern.jpg');
+    background-size: 200px 200px;
 }
 .skill .JS, .skill .HTML, .skill .CSS{
     margin-right: 20px;
     margin-top: 15px;
-    border-top: 3px solid #000;
+    border-top: 3px solid #D2B071;
 }
 .skill .Version_Control, .skill .Testing, .skill .JSS{
     margin-right: 20px;
     margin-top: 150px;
-    border-top: 3px solid #000;
+    border-top: 3px solid #D2B071;
 }
-.skill .title{
+.skill .skill_one .title,
+.skill .skill_two .title{
     width: 100%;
     height: 200px;
     margin-top: 15px;
@@ -188,4 +195,69 @@ a{
     height: 500px;
     margin-top: 15px;
     background-color: #C4C4C4;
+}
+
+.footer{
+    background-image: url('../image/bg_pattern.jpg');
+    background-size: 200px 200px;
+
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer .title{
+    border-bottom: 3px solid #D2B071;
+}
+.footer .des{
+    border: none;
+    vertical-align: center;
+}
+.footer .mail, .footer .github, .footer .des .phone, .footer .country{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.footer .github a:hover{
+    text-decoration: underline;    
+}
+.footer .contactme{
+    text-align: right;
+}
+.footer .contactme input{
+    margin-top: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+    border: 1px solid #CCCCCC;
+
+}
+.footer .contactme .name{
+    margin-right: 10px;
+}
+.footer .contactme .name,
+.footer .contactme .phone{
+    width: 200px;
+    height: 40px;
+}
+.footer .contactme .email{
+    width: 415px;
+    height: 40px;
+}
+.footer .contactme .message{
+    width: 415px;
+    height: 150px;
+}
+.footer .contactme .send{
+    width: 415px;
+    height: 40px;
+    font-size: 26px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-image: url('../image/bg_pattern.jpg');
+    background-size: 200px 200px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.footer .contactme .send:hover{
+    border: 1px solid #000;
 }
