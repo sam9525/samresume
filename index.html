@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
     <body>
         <div class="wrapper">
-            <div class="navbar">
+            <div class="navbar">    
                 <div class="container">
-                    <a href="#!" class="title">Resume</a>
+                    <a href="index.html" class="title">Resume</a>
                     <ul>
                         <li>
-                            <a href="#summary">簡歷</a>
+                            <a href="#pi">簡歷</a>
                         </li>
                         <li>
                             <a href="#skill">專業技能</a>
@@ -26,20 +28,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="pi">
+            <div id="pi" class="pi srtop-300">
                 <div class="container2">
                     <div class="head"></div>
                     <div class="name">黃聖翔</div>
                 </div>
             </div>
-            <div id="summary" class="summary">
+            <div id="summary" class="summary srtop-400">
                 <div class= "container2">
                     <div class="title">
                         <div class="title_zh-tw">簡歷</div>
                         <div class="title_en">Summary</div>
                     </div>
                     <div class="des">
-                        <div class="para"></div>
+                        <div class="para">畢業於弘光科技大學資訊工程系(2021)，高中時期因為對計算機概論特別有興趣，所以在大學時選擇就讀資訊工程系，畢業後也希望可以找到資工相關工作，目前對於網頁前端較為擅長，之後也會慢慢開始學習後端以及程式相關的東西</div>
                     </div>
                 </div>
             </div>
@@ -51,43 +53,52 @@
                     </div>
                     <div class="skill_one">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="JS">
-                                    <div class="title"></div>
-                                    <div class="para"></div>
-                                    <div class="para"></div>
-                                    <div class="para"></div>
+                            <div class="col-lg-4 col-md-6 srbottom-300">
+                                <div class="title">前端</div>
+                                <div class="front">
+                                    <div class="three">
+                                        <div class="icon" style="background-image: url('./image/html.png');"></div>
+                                        <div class="icon" style="background-image: url('./image/css.png');"></div>
+                                        <div class="icon" style="background-image: url('./image/jquery.jpg');"></div>
+                                    </div>
+                                    <div class="para">可獨立切版、完成RWD網頁<br>善用 jQuery Plugin 整合第三方插件製作動畫效果</div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="HTML">
-                                    <div class="title"></div>
-                                    <div class="para"></div>
-                                    <div class="para"></div>
-                                    <div class="para"></div>
+                            <div class="col-lg-4 col-md-6 srbottom-400">
+                                <div class="title">後端</div>
+                                <div class="backend">
+                                    <div class="three">
+                                        <div class="icon" style="background-image: url('./image/python.png');"></div>
+                                        <div class="icon" style="background-image: url('./image/c++.png');"></div>
+                                        <div class="icon" style="background-image: url('./image/js.png');"></div>
+                                    </div>
+                                    <div class="para">python爬蟲<br>利用JS製作簡易網站動畫效果<br>基礎C++</div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="CSS">
-                                    <div class="title"></div>
-                                    <div class="para"></div>
-                                    <div class="para"></div>
-                                    <div class="para"></div>
+                            <div class="col-lg-4 col-md-6 srbottom-500">
+                                <div class="title">版本控制</div>
+                                <div class="Version_Control">
+                                    <div class="three">
+                                        <div class="icon" style="background-image: url('./image/git.png');"></div>
+                                        <div class="icon" style="background-image: url('./image/github.png');"></div>
+                                        <div class="icon" style="background-image: url('./image/sourcetree.png');   "></div>
+                                    </div>
+                                    <div class="para">使用git init將我的專案做版本控制<br>git psuh將專案放到github上面同時建立網址<br>SourceTree git圖形化介面</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="skill_two">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="Version_Control">
+                            <div class="col-lg-4 col-md-6 srbottom-300">
+                                <div class="vvvv">
                                     <div class="title"></div>
                                     <div class="para"></div>
                                     <div class="para"></div>
                                     <div class="para"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 srbottom-400">
                                 <div class="Testing">
                                     <div class="title"></div>
                                     <div class="para"></div>
@@ -95,7 +106,7 @@
                                     <div class="para"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6 srbottom-500">
                                 <div class="JSS">
                                     <div class="title"></div>
                                     <div class="para"></div>
@@ -114,16 +125,25 @@
                         <div class="title_en">Work</div>
                     </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 srleft">
                         <div class="des">
-                            <div class="para">利用HTML、CSS、JS、Jquery將舊版Family Mart網頁重新設計</div>
+                            <div class="para">利用HTML、CSS、JS、jQuery將舊版Family Mart網頁重新設計，擁有RWD功能以及一些簡易的動畫效果</div>
+                            <div class="center">
+                                <a href="https://sam9525.github.io/samFM/" class="link">網站</a>
+                                <a href="https://github.com/sam9525/samFM" class="github_link">github原始碼</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 srright">
                         <div class="des">
-                            <div class="image-container">
-                                <div class="pic"></div>
-                            </div>                        
+                            <div class="owl-carousel owl-theme">
+                                <div class="image-container">
+                                    <div class="pic" style="background-image: url('./image/FM3.png');"></div>
+                                </div> 
+                                <div class="image-container">
+                                    <div class="pic" style="background-image: url('./image/FM4.png');"></div>
+                                </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +156,7 @@
                     <div class="title_en">Contact</div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">  
+                    <div class="col-lg-6 col-md-12 srleft">  
                         <div class="des">
                             <div class="mail">mall：sam9985246327@gmail.com</div>
                             <div class="github">github：<a href="https://sam9525.github.com/sam9525/">https://github.com/sam9525</a></div>
@@ -144,8 +164,8 @@
                             <div class="country">居住地：台灣，台北</div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="contactme">
+                    <div class="col-lg-6 col-md-12 srright">
+                        <div class="contactme des">
                             <input class="name" placeholder="name" type="text">
                             <input class="phone" placeholder="phone" type="tel">
                             <input class="email" placeholder="email" type="email">
@@ -158,4 +178,69 @@
         </div>
     </div>
 </body>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="vendor/OwlCarousel2-2.3.4/owl.carousel.js"></script> 
+<script src="vendor/scrollreveal/scrollreveal.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            animateOut: 'fadeOut',
+            items: 1,
+            autoplay: true,
+            loop: true,
+            autoplayTimeout: 5000
+        })
+        ScrollReveal().reveal('.srright',{
+            origin: 'right',
+		    distance: '200px',
+	    	delay: 300,
+		    duration: 1000,
+            reset: true
+        });
+        ScrollReveal().reveal('.srleft',{
+            origin: 'left',
+		    distance: '100px',
+	    	delay: 300,
+		    duration: 1000,
+            reset: true
+        });
+        ScrollReveal().reveal('.srbottom-300',{
+            origin: 'bottom',
+		    distance: '100px',
+	    	delay: 300,
+		    duration: 1000,
+            reset: true
+        });
+        ScrollReveal().reveal('.srbottom-400',{
+            origin: 'bottom',
+		    distance: '100px',
+	    	delay: 400,
+		    duration: 1000,
+            reset: true
+        });        
+        ScrollReveal().reveal('.srbottom-500',{
+            origin: 'bottom',
+		    distance: '100px',
+	    	delay: 500,
+		    duration: 1000,
+            reset: true
+        });
+        ScrollReveal().reveal('.srtop-300',{
+            origin: 'top',
+		    distance: '100px',
+	    	delay: 300,
+		    duration: 1000,
+            reset: true
+        });
+        ScrollReveal().reveal('.srtop-400',{
+            origin: 'top',
+		    distance: '100px',
+	    	delay: 500,
+		    duration: 1000,
+            reset: true
+        });
+    })
+</script>
 </html>
