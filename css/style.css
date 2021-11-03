@@ -210,10 +210,13 @@ a{
 .work .des{
     margin-right: 20px;
 }
+.work .des:nth-child(1){
+    padding: 0 10%;
+}
 .work .para{
     width: 100%;
     font-size: 20px;
-    padding-top: 45%;
+    padding-top: 30%;
     margin-top: 15px;
     text-align: center;
     font-weight: bold;
@@ -225,7 +228,7 @@ a{
     content: '';
     display: block;
     width: 100%;
-    padding-top: 100%;
+    padding-top: 75%;
 }
 .work .pic{
     position: absolute;
@@ -243,6 +246,24 @@ a{
     transition: all 0.8s;
 }
 .work .pic:hover{
+    transform: scale(1.05);
+}
+.work .pic2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    margin-top: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px -20px rgba(0,0,0,0.75);
+
+    transition: all 0.8s;
+}
+.work .pic2:hover{
     transform: scale(1.05);
 }
 .work .center{
@@ -302,7 +323,7 @@ a{
     margin-right: 10px;
 }
 .footer .contactme .name,
-.footer .contactme .phone{
+.footer .contactme .phonee{
     width: 200px;
     height: 40px;
 }
@@ -350,4 +371,11 @@ a{
     .footer .contactme{
         padding-top: 10%;
     }
+}
+
+.owl-theme .owl-dots button.owl-dot.active span{
+    background-color: #D2B071;
+}
+.pt-100{
+    padding-top: 100px;
 }
