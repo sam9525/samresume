@@ -172,6 +172,7 @@ a{
 }
 .skill .front, .skill .backend, .skill .Version_Control{
     margin-right: 20px;
+    margin-bottom: 50px;
     padding-top: 20px;
     border-top: 3px solid #D2B071;
 }
@@ -197,10 +198,13 @@ a{
     text-align: center;
     margin-top: 50px;
 }
-.skill .vvvv, .skill .Testing, .skill .JSS{
+.skill .react, .skill .Testing, .skill .JSS{
     margin-right: 20px;
-    margin-top: 80px;
+    padding-top: 20px;
     border-top: 3px solid #D2B071;
+}
+.skill .react .icon{
+    left: 38%;
 }
 
 
@@ -216,7 +220,7 @@ a{
 .work .para{
     width: 100%;
     font-size: 20px;
-    padding-top: 30%;
+    padding-top: 20%;
     margin-top: 15px;
     text-align: center;
     font-weight: bold;
@@ -286,6 +290,10 @@ a{
 .work a:hover{
     text-decoration: underline;
 }
+.work .row .title{
+    font-size: 30px;
+    color: #D2B071;
+}
 
 .footer{
     background-image: url('../image/bg_pattern.jpg');
@@ -299,12 +307,12 @@ a{
     text-align: center;
     vertical-align: center;
     padding-top: 10%;
-    font-weight: bold;
     margin-right: 20px;
 }
-.footer .mail, .footer .github, .footer .des .phone, .footer .country{
+ .mail,  .github,  .phone,  .country{
     padding-top: 15px;
     font-size: 20px;
+    font-weight: bold;
 }
 .footer .github a:hover{
     text-decoration: underline;    
