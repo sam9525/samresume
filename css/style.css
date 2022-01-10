@@ -72,6 +72,9 @@ a{
     padding-right: 10%;
 }
 
+.head{
+    background-size: contain;
+}
 .navbar{
     position: fixed;
     left: 0;
