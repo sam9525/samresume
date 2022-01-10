@@ -284,12 +284,6 @@ a{
     color: #D2B071;
     padding: 10px;
 }
-.work .github_link{
-    font-size: 20px;
-    font-weight: bold;
-    color: #D2B071;
-    padding: 10px;
-}
 .work a:hover{
     text-decoration: underline;
 }
