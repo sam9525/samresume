@@ -73,7 +73,8 @@ a{
 }
 
 .head{
-    background-size: contain;
+    background-size: cover;
+    background-image: url('../image/head.jpg');
 }
 .navbar{
     position: fixed;
