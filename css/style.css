@@ -34,6 +34,7 @@ ul{
 a{
     text-decoration: none;
     color: #333;
+    font-weight: bold;
 }
 
 
@@ -93,6 +94,7 @@ a{
 }
 .navbar ul{
     float: right;
+    list-style: none;
 }
 .navbar li{
     float: left;
@@ -104,7 +106,6 @@ a{
 }
 .navbar li a.active{
     text-decoration: underline;
-
 }
 
 .title{
@@ -129,6 +130,7 @@ a{
     font-size: 32px;
     font-weight: bold;
 }
+
 
 .title_zh-tw{
     display: inline-block;
@@ -193,12 +195,14 @@ a{
     text-align: left;
     padding: 0 8%;
 }
+.eduation ul{
+    padding: 0 4%;
+}
 .eduation li{
     font-size: 20px;
-    padding: 2px 4%;
 }
 .eduation .des2{
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .skill{
@@ -218,27 +222,25 @@ a{
     padding-top: 20px;
     border-top: 3px solid #D2B071;
 }
+.skill .image{
+    display:inline-block;
+    width: 100%;
+    padding: 1% 4%;
+}
 .skill .icon{
-    float: left;
-    width: 25%;
+    display: inline-block;
+    width: 35%;
     height: 100px;    
     background-size: contain;
     background-repeat: no-repeat;
     margin: 5px;
 }
-.skill .three{
-    float: left;
-    left: 12%;
-    width: 100%;
-}
-.skill .para{
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
+.skill .detail{
+    float: right;
+    width: 60%;
+    font-size: 20px;
     line-height: 24px;
     font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
 }
 .skill .react, .skill .Testing, .skill .JSS{
     margin-right: 20px;
@@ -345,7 +347,7 @@ a{
     padding-top: 10%;
     margin-right: 20px;
 }
- .mail,  .github,  .phone,  .country{
+.mail,  .github,  .phone,  .country{
     padding-top: 15px;
     font-size: 20px;
     font-weight: bold;
