@@ -286,6 +286,7 @@ a{
 }
 .eduation li{
     font-size: 20px;
+    padding: 5px;
 }
 .eduation .des2{
     padding-top: 40px;
@@ -340,12 +341,6 @@ a{
 .skill .h-850{
     height: 850px;
 }
-@media screen and (max-width: 530px) {
-    .skill .detail {
-        width: 50%;
-    }
-}
-
 
 .work{
     padding-top: 100px;
@@ -423,7 +418,7 @@ a{
 .work a:hover{
     text-decoration: underline;
 }
-.work .row .title{
+.work .title{
     font-size: 30px;
     color: #D2B071;
 }
@@ -465,19 +460,19 @@ a{
 }
 .footer .contactme .name,
 .footer .contactme .phonee{
-    width: 200px;
+    width: 40%;
     height: 40px;
 }
 .footer .contactme .email{
-    width: 415px;
+    width: 83%;
     height: 40px;
 }
 .footer .contactme .message{
-    width: 415px;
+    width: 83%;
     height: 150px;
 }
 .footer .contactme .send{
-    width: 415px;
+    width: 83%;
     height: 40px;
     font-size: 26px;
     margin-top: 15px;
@@ -518,6 +513,92 @@ a{
     }
     .footer .contactme{
         padding-top: 10%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .pi .name {
+        font-size: 28px;
+    }
+    .pi .mail, .pi .github, .pi .phone, .pi .country {
+        font-size: 18px;
+    }
+
+    .summary .title_zh-tw{
+        font-size: 26px;
+    }
+    .summary .title_en {
+        font-size: 20px;
+    }
+    .summary .para {
+        font-size: 20px;
+    }
+
+    .eduation .title_zh-tw{
+        font-size: 26px;
+    }
+    .eduation .title_en {
+        font-size: 20px;
+    }
+    .eduation .sub_title {
+        font-size: 20px;
+    }
+    .eduation li {
+        font-size: 18px;
+    }
+
+    .work .title_zh-tw{
+        font-size: 26px;
+    }
+    .work .title_en {
+        font-size: 20px;
+    }
+    .work .title {
+        font-size: 26px;
+    }
+    .work .para, .work .center {
+        font-size: 18px;
+    }
+
+    .footer .title_zh-tw{
+        font-size: 26px;
+    }
+    .footer .title_en {
+        font-size: 20px;
+    }
+    .footer .mail, .footer .github, .footer .phone, .footer .country{
+        font-size: 18px;
+    }
+
+    .skill .title_zh-tw{
+        font-size: 26px;
+    }
+    .skill .title_en {
+        font-size: 20px;
+    }
+    .skill .skill_one .title {
+        font-size: 22px;
+    }
+    .skill .detail {
+        width: 50%;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .skill .h-850 {
+        height: 900px;
+    }
+    .pi .head {
+        width: 180px;
+        height: 180px;
+    }
+    .pi .name {
+        font-size: 24px;
+    }
+    .pi .mail, .pi .github, .pi .phone, .pi .country{
+        font-size: 14px;
+    }
+    .footer .mail, .footer .github, .footer .phone, .footer .country{
+        font-size: 14px;
     }
 }
 
