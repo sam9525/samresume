@@ -47,7 +47,8 @@ a{
     clear: both;
 }
 
-.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12{
+.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12, .col-md-12, .col-md-6,
+.col-sm-12{
     float: left;
 }
 .col-lg-3{
@@ -61,6 +62,19 @@ a{
 }
 .col-lg-12{
 	width: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .col-md-12{
+        width: 100%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .col-sm-12 {
+        width: 100%;
+    }
 }
 
 .container{
@@ -413,10 +427,18 @@ a{
     font-size: 20px;
     font-weight: bold;
     color: #D2B071;
+    margin: 5px;
     padding: 10px;
+    border: 2px solid #D2B071;
+    border-radius: 30px;
+    transition: 0.5s;
 }
 .work a:hover{
     text-decoration: underline;
+}
+.work .link:hover {
+    background: #D2B071;
+    color: white;
 }
 .work .title{
     font-size: 30px;
@@ -495,12 +517,6 @@ a{
     .container2{
         padding: 0 5%;
     }
-    .col-md-12{
-        width: 100%;
-    }
-    .col-md-6{
-        width: 50%;
-    }
     .work .des{
         padding: 15%;
         margin-bottom: 7%;
@@ -574,13 +590,6 @@ a{
     }
     .skill .title_en {
         font-size: 20px;
-    }
-    .skill .skill_one .title {
-        font-size: 22px;
-    }
-    .skill .detail {
-        width: 50%;
-        font-size: 16px;
     }
 }
 @media screen and (max-width: 360px) {
