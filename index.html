@@ -190,6 +190,39 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 srleft">
                         <div class="des">
+                            <div class="owl-carousel owl-theme">
+                                <div class="image-container">
+                                    <div class="pic2" style="background-image: url('./image/sick-fits-1.png');"></div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="pic2" style="background-image: url('./image/sick-fits-2.png');"></div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="pic2" style="background-image: url('./image/sick-fits-3.png');"></div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="pic2" style="background-image: url('./image/sick-fits-4.png');"></div>
+                                </div>
+                                <div class="image-container">
+                                    <div class="pic2" style="background-image: url('./image/sick-fits-5.png');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 srright">
+                        <div class="des">
+                            <div class="para">
+                                <div class="title">CSS & JS ONLY</div>使用純 CSS 和 JavaScript 製作一些特效以及小遊戲，來讓我練習及學習。
+                            </div>
+                            <div class="center">
+                                <a href="https://github.com/sam9525/sick-fits" class="link">github原始碼</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-100">
+                    <div class="col-lg-6 col-md-12 srleft">
+                        <div class="des">
                             <div class="para">
                                 <div class="title">Family Mart 網站重作練習</div>利用 HTML、CSS、JS、jQuery 將舊版 Family Mart
                                 網頁重新設計，擁有 RWD 功能以及一些簡易的動畫效果。<br>在製作這個網站時，除了學習使用 reactJS 來製作網站外，也學到了利用 JS 語法 map
@@ -198,7 +231,7 @@
                             <div class="center">
                                 <a href="https://194pii.csb.app/" class="link">網站</a>
                                 <a href="https://github.com/sam9525/family-mart-react" class="link">github原始碼</a>
-                                <a href="https://codesandbox.io/s/brave-wind-ft6upq?file=/src/index.js"
+                                <a href="https://codesandbox.io/s/wild-framework-194pii"
                                     class="link">codesandbox</a>
                             </div>
                         </div>
@@ -365,55 +398,58 @@
             loop: true,
             autoplayTimeout: 5000
         })
-        // ScrollReveal().reveal('.srright',{
-        //     origin: 'right',
-        //     distance: '100px',
-        // 	delay: 400,
-        //     duration: 1000,
-        //     reset: true
-        // });
-        // ScrollReveal().reveal('.srleft',{
-        //     origin: 'left',
-        //     distance: '100px',
-        // 	delay: 300,
-        //     duration: 1000,
-        //     reset: true
-        // });
-        // ScrollReveal().reveal('.srbottom-300',{
-        //     origin: 'bottom',
-        //     distance: '100px',
-        // 	delay: 300,
-        //     duration: 1000,
-        //     reset: true
-        // });
-        // ScrollReveal().reveal('.srbottom-400',{
-        //     origin: 'bottom',
-        //     distance: '100px',
-        // 	delay: 400,
-        //     duration: 1000,
-        //     reset: true
-        // });        
-        // ScrollReveal().reveal('.srbottom-500',{
-        //     origin: 'bottom',
-        //     distance: '100px',
-        // 	delay: 500,
-        //     duration: 1000,
-        //     reset: true
-        // });
-        // ScrollReveal().reveal('.srtop-300',{
-        //     origin: 'top',
-        //     distance: '100px',
-        // 	delay: 300,
-        //     duration: 1000,
-        //     reset: true
-        // });
-        // ScrollReveal().reveal('.srtop-400',{
-        //     origin: 'top',
-        //     distance: '100px',
-        // 	delay: 500,
-        //     duration: 1000,
-        //     reset: true
-        // });
+        if(screen.width >= 1300) {
+            
+            ScrollReveal().reveal('.srright',{
+                origin: 'right',
+                distance: '100px',
+                delay: 400,
+                duration: 1000,
+                reset: true
+            });
+            ScrollReveal().reveal('.srleft',{
+                origin: 'left',
+                distance: '100px',
+                delay: 300,
+                duration: 1000,
+                reset: true
+            });
+            ScrollReveal().reveal('.srbottom-300',{
+                origin: 'bottom',
+                distance: '100px',
+                delay: 300,
+                duration: 1000,
+                reset: true
+            });
+            ScrollReveal().reveal('.srbottom-400',{
+                origin: 'bottom',
+                distance: '100px',
+                delay: 400,
+                duration: 1000,
+                reset: true
+            });        
+            ScrollReveal().reveal('.srbottom-500',{
+                origin: 'bottom',
+                distance: '100px',
+                delay: 500,
+                duration: 1000,
+                reset: true
+            });
+            ScrollReveal().reveal('.srtop-300',{
+                origin: 'top',
+                distance: '100px',
+                delay: 300,
+                duration: 1000,
+                reset: true
+            });
+            ScrollReveal().reveal('.srtop-400',{
+                origin: 'top',
+                distance: '100px',
+                delay: 500,
+                duration: 1000,
+                reset: true
+            });
+        }
     })
 </script>
 
