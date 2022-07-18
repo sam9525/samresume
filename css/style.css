@@ -8,93 +8,115 @@
 /* -------------------------- *\
     Content
 \* -------------------------- */
- /**
+/**
  * Content ............ You are reading it!
  * Globel ............ Set common styles
  * Layout ............ Set grid styles
  * Component ............ Set component styles
  */
 
-*{
+* {
     box-sizing: border-box;
     position: relative;
 }
 
-html,body{
-    font-family:  '微軟正黑體';
+html,
+body {
+    font-family: '微軟正黑體';
     background-color: #fff;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
 
-.row{
+.row {}
 
-}
-.row:after{
+.row:after {
     content: '';
     display: block;
     clear: both;
 }
 
-.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12, .col-md-12, .col-md-6,
-.col-sm-12{
+.col-lg-6,
+.col-lg-4,
+.col-lg-3,
+.col-lg-12,
+.col-md-12,
+.col-md-6,
+.col-sm-12 {
     float: left;
 }
-.col-lg-3{
+
+.col-lg-3 {
     width: 25%;
 }
-.col-lg-4{
-	width: 33.333333%;
+
+.col-lg-4 {
+    width: 33.333333%;
 }
-.col-lg-6{
-	width: 50%;
+
+.col-lg-6 {
+    width: 50%;
 }
-.col-lg-12{
-	width: 100%;
+
+.col-lg-12 {
+    width: 100%;
 }
+
 @media screen and (max-width: 1100px) {
-    .col-md-12{
+    .col-md-12 {
         width: 100%;
     }
-    .col-md-6{
+
+    .col-md-6 {
         width: 50%;
     }
 }
+
 @media screen and (max-width: 700px) {
     .col-sm-12 {
         width: 100%;
     }
 }
 
-.container{
+.container {
     /* padding-left: 8%;
     padding-right: 8%; */
     max-width: 1300px;
     margin: auto;
 }
-.container2{
+
+.container2 {
     /* padding-left: 10%;
     padding-right: 10%; */
     max-width: 1100px;
     margin: auto;
 }
 
-.head{
+.head {
     background-size: cover;
     background-image: url('../image/head.jpg');
 }
-.navbar{
+
+.navbar {
     position: fixed;
     z-index: 500;
     width: 100%;
@@ -102,25 +124,30 @@ a{
     background-image: url('../image/fv_bg.jpg');
     background-size: cover;
 }
-.navbar .title{
+
+.navbar .title {
     float: left;
     font-size: 30px;
     padding-top: 12px;
     padding-left: 20px;
 }
-.navbar ul{
+
+.navbar ul {
     float: right;
     list-style: none;
 }
-.navbar li{
+
+.navbar li {
     float: left;
     font-size: 24px;
     padding: 16px 20px;
 }
-.navbar li:hover a{
+
+.navbar li:hover a {
     text-decoration: underline;
 }
-.navbar li a.active{
+
+.navbar li a.active {
     text-decoration: underline;
 }
 
@@ -131,7 +158,8 @@ a{
     height: 48px;
     margin-top: 8px;
 }
-.navbar .menu-bar span{
+
+.navbar .menu-bar span {
     display: block;
     width: 32px;
     height: 3px;
@@ -139,19 +167,22 @@ a{
     background-color: black;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
-.navbar .menu-bar span:nth-child(1){
+
+.navbar .menu-bar span:nth-child(1) {
     top: 12px;
 }
-.navbar .menu-bar span:nth-child(2){
+
+.navbar .menu-bar span:nth-child(2) {
     top: 22px;
 }
-.navbar .menu-bar span:nth-child(3){
+
+.navbar .menu-bar span:nth-child(3) {
     top: 32px;
 }
 
-.navbar .close-btn{
+.navbar .close-btn {
     display: none;
     width: 48px;
     height: 48px;
@@ -159,7 +190,8 @@ a{
     right: 33px;
     top: 8px;
 }
-.navbar .close-btn span{
+
+.navbar .close-btn span {
     width: 40px;
     height: 2px;
     position: absolute;
@@ -167,14 +199,17 @@ a{
     top: 50%;
     left: 50%;
 }
-.navbar .close-btn span:nth-child(1){
-    transform: translate(-50%,-50%) rotate(45deg);
+
+.navbar .close-btn span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
 }
-.navbar .close-btn span:nth-child(2){
-    transform: translate(-50%,-50%) rotate(-45deg);
+
+.navbar .close-btn span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 @media screen and (max-width: 700px) {
-    .navbar ul{
+    .navbar ul {
         position: fixed;
         left: 0;
         top: 0;
@@ -191,76 +226,87 @@ a{
         visibility: hidden;
         transition: all 0.3s;
     }
+
     .navbar ul li {
         text-align: center;
         padding: 16px;
     }
-    #popup-menu:target{
+
+    #popup-menu:target {
         opacity: 1;
         visibility: visible;
     }
-    .navbar .close-btn{
+
+    .navbar .close-btn {
         display: block;
     }
+
     .navbar .menu-bar {
         display: inline-block;
     }
 }
 
-.title{
+.title {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.pi{
+.pi {
     width: 100%;
     text-align: center;
     padding-top: 100px;
 }
-.pi .head{
+
+.pi .head {
     display: inline-block;
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    background-color:#C4C4C4;
+    background-color: #C4C4C4;
 }
-.pi .name{
+
+.pi .name {
     padding-top: 40px;
     font-size: 32px;
     font-weight: bold;
 }
 
 
-.title_zh-tw{
+.title_zh-tw {
     display: inline-block;
     font-size: 32px;
     font-weight: bold;
 }
-.title_en{
+
+.title_en {
     display: inline-block;
     font-size: 26px;
-    font-weight: bold;    
+    font-weight: bold;
 }
-.des{
+
+.des {
     border-top: 3px solid #D2B071;
 }
 
-.summary{
+.summary {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.summary .des{
+
+.summary .des {
     margin-right: 20px;
 }
-.summary .title{
+
+.summary .title {
     width: 100%;
     font-size: 24px;
     line-height: 24px;
     font-weight: bold;
     text-align: center;
 }
-.summary .para{
+
+.summary .para {
     display: inline-block;
     width: 100%;
     font-size: 24px;
@@ -271,23 +317,26 @@ a{
     padding: 0 8%;
 }
 
-.eduation{    
+.eduation {
     padding-bottom: 100px;
 }
-.eduation .sub_title{
+
+.eduation .sub_title {
     display: inline-block;
     padding: 10px;
     font-size: 24px;
     line-height: 24px;
     font-weight: bold;
 }
-.eduation .data{
+
+.eduation .data {
     float: right;
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
 }
-.eduation .para{
+
+.eduation .para {
     width: 100%;
     font-size: 24px;
     line-height: 24px;
@@ -295,94 +344,114 @@ a{
     text-align: left;
     padding: 0 8%;
 }
-.eduation ul{
+
+.eduation ul {
     padding: 0 4%;
 }
-.eduation li{
+
+.eduation li {
     font-size: 20px;
     padding: 5px;
 }
-.eduation .des2{
+
+.eduation .des2 {
     padding-top: 40px;
 }
 
-.skill{
+.skill {
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: url('../image/bg_pattern.jpg');
     background-size: 200px 200px;
 }
+
 .skill .skill_one .title,
-.skill .skill_two .title{
+.skill .skill_two .title {
     font-size: 24px;
     font-weight: bold;
 }
-.skill .front, .skill .backend, .skill .Version_Control{
+
+.skill .front,
+.skill .backend,
+.skill .Version_Control {
     margin-right: 20px;
     margin-bottom: 50px;
     padding-top: 20px;
     border-top: 3px solid #D2B071;
 }
-.skill .image{
-    display:inline-block;
+
+.skill .image {
+    display: inline-block;
     width: 100%;
     padding: 1% 4%;
 }
-.skill .icon{
+
+.skill .icon {
     display: inline-block;
     width: 35%;
-    height: 100px;    
+    height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 5px;
 }
-.skill .detail{
+
+.skill .detail {
     float: right;
     width: 60%;
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
 }
-.skill .react, .skill .Testing, .skill .JSS{
+
+.skill .react,
+.skill .Testing,
+.skill .JSS {
     margin-right: 20px;
     padding-top: 20px;
     border-top: 3px solid #D2B071;
 }
-.skill .react .icon{
+
+.skill .react .icon {
     left: 38%;
 }
 
-.skill .h-850{
+.skill .h-850 {
     height: 850px;
 }
 
-.work{
+.work {
     padding-top: 100px;
 }
-.work .des{
+
+.work .des {
     margin-right: 20px;
 }
-.work .des:nth-child(1){
+
+.work .des:nth-child(1) {
     padding: 0 10%;
 }
-.work .para{
+
+.work .para {
+    display: inline-block;
     width: 100%;
     font-size: 20px;
-    padding-top: 20%;
-    margin-top: 15px;
+    padding-top: 16%;
     text-align: center;
     font-weight: bold;
 }
-.work .image-container{
+
+.work .image-container {
     width: 100%;
 }
-.work .image-container:before{
+
+.work .image-container:before {
     content: '';
     display: block;
     width: 100%;
     padding-top: 75%;
 }
-.work .pic{
+
+.work .pic {
     position: absolute;
     left: 0;
     right: 0;
@@ -393,14 +462,16 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 3px;
-    box-shadow: 0px 0px 20px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -20px rgba(0, 0, 0, 0.75);
 
     transition: all 0.8s;
 }
-.work .pic:hover{
+
+.work .pic:hover {
     transform: scale(1.05);
 }
-.work .pic2{
+
+.work .pic2 {
     position: absolute;
     left: 0;
     right: 0;
@@ -411,19 +482,23 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
-    box-shadow: 0px 0px 20px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -20px rgba(0, 0, 0, 0.75);
 
     transition: all 0.8s;
 }
-.work .pic2:hover{
+
+.work .pic2:hover {
     transform: scale(1.05);
 }
-.work .center{
+
+.work .center {
     width: 100%;
     text-align: center;
     padding-top: 5%;
 }
-.work .link{
+
+.work .link {
+    display: inline-block;
     font-size: 20px;
     font-weight: bold;
     color: #D2B071;
@@ -433,19 +508,22 @@ a{
     border-radius: 30px;
     transition: 0.5s;
 }
-.work a:hover{
+
+.work a:hover {
     text-decoration: underline;
 }
+
 .work .link:hover {
     background: #D2B071;
     color: white;
 }
-.work .title{
+
+.work .title {
     font-size: 30px;
     color: #D2B071;
 }
 
-.footer{
+.footer {
     background-image: url('../image/bg_pattern.jpg');
     background-size: 200px 200px;
 
@@ -453,47 +531,60 @@ a{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.footer .des{
+
+.footer .des {
     text-align: center;
     vertical-align: center;
     padding-top: 10%;
     margin-right: 20px;
 }
-.mail,  .github,  .phone,  .country{
+
+.mail,
+.github,
+.phone,
+.country {
     padding-top: 15px;
     font-size: 20px;
     font-weight: bold;
 }
-.footer .github a:hover{
-    text-decoration: underline;    
+
+.footer .github a:hover {
+    text-decoration: underline;
 }
-.footer .contactme{
+
+.footer .contactme {
     text-align: center;
 }
-.footer .contactme input{
+
+.footer .contactme input {
     margin-top: 15px;
     margin-right: 15px;
-    box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -13px rgba(0, 0, 0, 0.75);
     border: 1px solid #CCCCCC;
 
 }
-.footer .contactme .name{
+
+.footer .contactme .name {
     margin-right: 10px;
 }
+
 .footer .contactme .name,
-.footer .contactme .phonee{
+.footer .contactme .phonee {
     width: 40%;
     height: 40px;
 }
-.footer .contactme .email{
+
+.footer .contactme .email {
     width: 83%;
     height: 40px;
 }
-.footer .contactme .message{
+
+.footer .contactme .message {
     width: 83%;
     height: 150px;
 }
-.footer .contactme .send{
+
+.footer .contactme .send {
     width: 83%;
     height: 40px;
     font-size: 26px;
@@ -503,117 +594,156 @@ a{
     background-size: 200px 200px;
     border: 1px solid #CCCCCC;
     border-radius: 2px;
-    box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -13px rgba(0, 0, 0, 0.75);
     transition: 0.5s;
     font-weight: bold;
 }
-.footer .contactme .send:hover{
+
+.footer .contactme .send:hover {
     border: 1px solid #000;
 }
-@media screen and (max-width: 1100px){
-    .container{
+
+@media screen and (max-width: 1100px) {
+    .container {
         padding: 0 5%;
     }
-    .container2{
+
+    .container2 {
         padding: 0 5%;
     }
-    .work .des{
-        padding: 15%;
+
+    .work .des {
+        margin-right: 0;
         margin-bottom: 7%;
     }
-    .work .para{
-        padding: 0;
+
+    .work .para {
+        padding-top: 7%;
     }
-    .footer .des{
+
+    .footer .des {
         padding-bottom: 10%;
     }
-    .footer .contactme{
+
+    .footer .contactme {
         padding-top: 10%;
     }
 }
+
 @media screen and (max-width: 530px) {
     .pi .name {
         font-size: 28px;
     }
-    .pi .mail, .pi .github, .pi .phone, .pi .country {
+
+    .pi .mail,
+    .pi .github,
+    .pi .phone,
+    .pi .country {
         font-size: 18px;
     }
 
-    .summary .title_zh-tw{
+    .summary .title_zh-tw {
         font-size: 26px;
     }
+
     .summary .title_en {
         font-size: 20px;
     }
+
     .summary .para {
         font-size: 20px;
     }
 
-    .eduation .title_zh-tw{
+    .eduation .title_zh-tw {
         font-size: 26px;
     }
+
     .eduation .title_en {
         font-size: 20px;
     }
+
     .eduation .sub_title {
         font-size: 20px;
     }
+
     .eduation li {
         font-size: 18px;
     }
 
-    .work .title_zh-tw{
+    .work .title_zh-tw {
         font-size: 26px;
     }
+
     .work .title_en {
         font-size: 20px;
     }
+
     .work .title {
         font-size: 26px;
     }
-    .work .para, .work .center {
+
+    .work .para,
+    .work .center {
         font-size: 18px;
     }
 
-    .footer .title_zh-tw{
+    .footer .title_zh-tw {
         font-size: 26px;
     }
+
     .footer .title_en {
         font-size: 20px;
     }
-    .footer .mail, .footer .github, .footer .phone, .footer .country{
+
+    .footer .mail,
+    .footer .github,
+    .footer .phone,
+    .footer .country {
         font-size: 18px;
     }
 
-    .skill .title_zh-tw{
+    .skill .title_zh-tw {
         font-size: 26px;
     }
+
     .skill .title_en {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 360px) {
     .skill .h-850 {
         height: 900px;
     }
+
     .pi .head {
         width: 180px;
         height: 180px;
     }
+
     .pi .name {
         font-size: 24px;
     }
-    .pi .mail, .pi .github, .pi .phone, .pi .country{
+
+    .pi .mail,
+    .pi .github,
+    .pi .phone,
+    .pi .country {
         font-size: 14px;
     }
-    .footer .mail, .footer .github, .footer .phone, .footer .country{
+
+    .footer .mail,
+    .footer .github,
+    .footer .phone,
+    .footer .country {
         font-size: 14px;
     }
 }
 
-.owl-theme .owl-dots button.owl-dot.active span{
+.owl-theme .owl-dots button.owl-dot.active span {
     background-color: #D2B071;
 }
-.pt-100{
+
+.pt-100 {
     padding-top: 100px;
 }
